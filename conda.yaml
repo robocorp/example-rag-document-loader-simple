@@ -1,0 +1,19 @@
+# For more details on the format and content:
+# https://github.com/robocorp/rcc/blob/master/docs/recipes.md#what-is-in-condayaml
+# Tip: Adding a link to the release notes of the packages helps maintenance and security.
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.9.16                 # https://pyreadiness.org/3.9
+  - pip=22.1.2                    # https://pip.pypa.io/en/stable/news
+  - pip:
+    - rpaframework==26.1.0        # https://rpaframework.org/releasenotes.html
+    - robocorp==0.10.1            # https://pypi.org/project/robocorp
+    - langchain==0.0.279
+    - openai==0.28.0
+    - unstructured==0.10.12
+    - tiktoken==0.4.0
+    - chromadb==0.4.8
+    - pdf2image==1.16.3
